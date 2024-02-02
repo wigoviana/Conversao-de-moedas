@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Coin Conversion</title>
+</head>
+
+<body>
+    <header>
+        <img class="imglogo" src="./assets/logo.gif" alt="logo-converte">
+    </header>
+    <main>
+        <label>
+            Converter <strong>de</strong>
+            <select id="convertreal">
+                <option value="real">R$ Real brasileiro</option>
+            </select>
+            <label>
+                Converter <strong>para</strong>
+                <select id="ConvertSelect">
+                    <option value="dolar">USS Dólar americano</option>
+                    <option value="euro">€ Euro </option>
+                    <option value="libra">£ libra </option>
+                    <option value="Bitcoin">₿ Bitcoin</option>
+                </select>
+            </label>
+            <label class="valorDiferente">
+                Valor
+                <input id="valorDoInput" placeholder="R$ 0,00">
+            </label>
+            <button id="button"> Converter</button>
+
+            <section>
+                <div class="conversionboxreal"><img src="./assets/real.png" alt="real-brasileiro">
+                    <p class="coin">Real</p>
+                    <p class="real">R$ 0,00</p>
+                </div>
+
+                <img class="arrow" src="./assets/seta.png" alt="seta">
+
+                <div class="conversionboxdolar">
+                    <img id="imgchange" src="./assets/dollar.png" alt="">
+                    <p class="coin"  id="namechange">Dólar Americano</p>
+                    <p id="otherscoin">US$ 0,00</p>
+                </div>
+            </section>
+    </main>
+</body>
+
+<script src="arquivo.js"></script>
+
+</html>
